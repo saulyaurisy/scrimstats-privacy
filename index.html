@@ -8,7 +8,7 @@
 
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
             line-height: 1.7;
             margin: 0;
             padding: 0;
@@ -18,37 +18,46 @@
 
         .container {
             max-width: 900px;
-            margin: 50px auto;
-            padding: 40px;
-            background: #181b23;
+            margin: 40px auto;
+            padding: 30px;
+            background: #181b24;
             border-radius: 12px;
         }
 
         h1 {
             color: #ffffff;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
 
         h2 {
-            color: #5865F2;
+            color: #7289da;
             margin-top: 35px;
         }
 
         p, li {
-            color: #c9c9c9;
+            color: #d5d5d5;
+        }
+
+        .date {
+            color: #999;
+            font-size: 14px;
+            margin-bottom: 30px;
         }
 
         a {
             color: #7289da;
         }
 
-        .updated {
-            color: #999;
-            font-size: 14px;
+        .important {
+            background: #222633;
+            padding: 15px 20px;
+            border-left: 4px solid #7289da;
+            border-radius: 5px;
+            margin: 20px 0;
         }
 
         footer {
-            margin-top: 50px;
+            margin-top: 40px;
             padding-top: 20px;
             border-top: 1px solid #333;
             color: #888;
@@ -63,202 +72,189 @@
 
     <h1>Política de Privacidad de ScrimStats Bot</h1>
 
-    <p class="updated">
+    <div class="date">
         Última actualización: 18 de agosto de 2026
+    </div>
+
+    <p>
+        Esta Política de Privacidad explica cómo <strong>ScrimStats Bot</strong>
+        procesa la información cuando se utiliza dentro de servidores de Discord.
     </p>
 
     <p>
-        Esta Política de Privacidad explica cómo ScrimStats Bot
-        ("ScrimStats", "el Bot", "nosotros" o "nuestra aplicación")
-        procesa la información cuando los usuarios interactúan con
-        el bot dentro de Discord.
+        ScrimStats Bot es una herramienta destinada a la gestión de scrims
+        y al procesamiento de estadísticas de partidas competitivas de
+        Free Fire.
     </p>
 
-    <h2>1. ¿Qué es ScrimStats?</h2>
+    <h2>1. Información que procesa ScrimStats</h2>
 
     <p>
-        ScrimStats es un bot de Discord diseñado para gestionar scrims
-        y estadísticas de partidas competitivas de Free Fire.
+        Para proporcionar sus funciones, ScrimStats puede procesar información
+        contenida en archivos de registro (<strong>.log</strong>) que los usuarios
+        adjuntan a mensajes dentro de Discord.
     </p>
 
     <p>
-        El bot permite procesar información relacionada con partidas,
-        jugadores, equipos, eliminaciones, posiciones, resultados y
-        puntuaciones, con el objetivo de generar estadísticas,
-        rankings y resultados para las comunidades que utilizan
-        ScrimStats.
-    </p>
-
-    <h2>2. Información que podemos procesar</h2>
-
-    <p>
-        Dependiendo de las funciones utilizadas en un servidor,
-        ScrimStats puede procesar información proporcionada a través
-        de Discord, incluyendo:
+        Estos archivos pueden contener información relacionada con las partidas,
+        incluyendo, entre otros:
     </p>
 
     <ul>
-        <li>Identificadores de usuarios de Discord.</li>
-        <li>Nombres de usuario o nombres utilizados dentro del servidor.</li>
-        <li>Identificadores de servidores y canales necesarios para el funcionamiento del bot.</li>
-        <li>Información relacionada con jugadores y equipos.</li>
-        <li>Resultados y estadísticas de partidas.</li>
-        <li>Eliminaciones, posiciones y puntuaciones relacionadas con las partidas.</li>
-        <li>Contenido de mensajes cuando sea necesario para procesar comandos o resultados de scrims.</li>
+        <li>Información de jugadores.</li>
+        <li>Nombres o identificadores utilizados dentro de las partidas.</li>
+        <li>Información de equipos.</li>
+        <li>Eliminaciones.</li>
+        <li>Posiciones.</li>
+        <li>Resultados de las partidas.</li>
+        <li>Otros datos necesarios para calcular estadísticas y puntuaciones.</li>
     </ul>
 
-    <h2>3. Uso del contenido de los mensajes</h2>
+    <p>
+        ScrimStats utiliza esta información únicamente para procesar los
+        resultados y proporcionar sus funciones de estadísticas y gestión
+        de scrims.
+    </p>
+
+    <h2>2. Contenido de los mensajes de Discord</h2>
 
     <p>
-        ScrimStats utiliza el acceso al contenido de determinados
-        mensajes de Discord para identificar y procesar información
-        necesaria para sus funciones de gestión de scrims y
-        estadísticas.
+        ScrimStats utiliza el acceso al contenido de mensajes necesario para
+        detectar mensajes que contienen archivos de registro (<strong>.log</strong>)
+        utilizados por el sistema.
     </p>
 
     <p>
-        Este acceso permite al bot interpretar información enviada por
-        los usuarios relacionada con partidas, resultados, jugadores,
-        equipos y puntuaciones.
+        El bot no está diseñado para analizar conversaciones personales ni
+        para recopilar de forma general el contenido de las conversaciones
+        de los servidores.
+    </p>
+
+    <div class="important">
+        <strong>Importante:</strong>
+        ScrimStats necesita procesar el contenido de los archivos de registro
+        enviados mediante Discord para poder generar las estadísticas de las
+        partidas.
+    </div>
+
+    <h2>3. Almacenamiento de información</h2>
+
+    <p>
+        La versión actual de ScrimStats procesa la información de las partidas
+        durante la ejecución del bot y mantiene los datos procesados
+        temporalmente en memoria.
     </p>
 
     <p>
-        El contenido de los mensajes no se utiliza para entrenar
-        modelos de inteligencia artificial ni para publicidad.
+        La versión actual del bot no utiliza una base de datos externa para
+        almacenar permanentemente el contenido de los mensajes o los archivos
+        de registro procesados.
     </p>
 
-    <h2>4. ¿Para qué utilizamos la información?</h2>
+    <p>
+        Los archivos de registro son utilizados como entrada para el procesamiento
+        de las estadísticas y no son utilizados por ScrimStats para crear una
+        base de datos permanente de conversaciones de Discord.
+    </p>
+
+    <h2>4. Uso de los datos</h2>
 
     <p>
-        La información procesada por ScrimStats se utiliza únicamente
-        para proporcionar y mejorar las funcionalidades del bot,
-        incluyendo:
+        La información procesada se utiliza para:
     </p>
 
     <ul>
-        <li>Procesar resultados de scrims.</li>
-        <li>Registrar estadísticas de jugadores y equipos.</li>
-        <li>Calcular puntuaciones.</li>
-        <li>Generar rankings y tablas de clasificación.</li>
-        <li>Mostrar resultados y estadísticas dentro de Discord.</li>
-        <li>Mantener el funcionamiento y seguridad del bot.</li>
-        <li>Detectar errores y solucionar problemas técnicos.</li>
+        <li>Procesar resultados de partidas.</li>
+        <li>Calcular estadísticas.</li>
+        <li>Procesar eliminaciones y posiciones.</li>
+        <li>Generar resultados de scrims.</li>
+        <li>Generar estadísticas de jugadores y equipos.</li>
+        <li>Proporcionar las funciones relacionadas con la competición.</li>
     </ul>
 
-    <h2>5. Almacenamiento de información</h2>
+    <h2>5. Inteligencia artificial</h2>
 
     <p>
-        ScrimStats puede almacenar información necesaria para mantener
-        estadísticas, resultados y configuraciones del bot.
+        ScrimStats no utiliza el contenido de los mensajes ni los archivos
+        de registro procesados para entrenar modelos de inteligencia artificial
+        o modelos de aprendizaje automático.
+    </p>
+
+    <h2>6. Publicidad y venta de información</h2>
+
+    <p>
+        ScrimStats no utiliza la información procesada para publicidad
+        personalizada y no vende el contenido procesado a terceros.
+    </p>
+
+    <h2>7. Compartición de información</h2>
+
+    <p>
+        ScrimStats no comparte deliberadamente el contenido de los archivos
+        de registro con terceros para fines comerciales.
     </p>
 
     <p>
-        La información almacenada se limita a los datos necesarios para
-        proporcionar las funcionalidades de ScrimStats y no se utiliza
-        para vender información personal ni para publicidad dirigida.
+        Las estadísticas y resultados generados por el bot pueden ser
+        mostrados dentro del servidor de Discord en el que se utiliza
+        ScrimStats, dependiendo de la configuración y las funciones utilizadas
+        por los administradores del servidor.
     </p>
 
-    <h2>6. Compartición de información</h2>
+    <h2>8. Discord</h2>
 
     <p>
-        ScrimStats no vende ni alquila información personal de los
-        usuarios.
-    </p>
-
-    <p>
-        La información procesada por el bot puede ser manejada por los
-        servicios técnicos necesarios para alojar y ejecutar ScrimStats,
-        siempre que sea necesario para proporcionar el servicio.
-    </p>
-
-    <h2>7. Datos de Discord</h2>
-
-    <p>
-        ScrimStats funciona mediante la plataforma Discord y está sujeto
-        a las funciones y permisos proporcionados por Discord.
+        ScrimStats funciona como una aplicación de terceros dentro de
+        Discord. El uso de Discord también está sujeto a las políticas,
+        condiciones y prácticas de privacidad de Discord.
     </p>
 
     <p>
-        Los usuarios deben tener en cuenta que Discord también procesa
-        información de acuerdo con sus propias políticas.
-    </p>
-
-    <p>
-        Para obtener más información sobre las prácticas de privacidad
-        de Discord, puedes consultar:
-        <a href="https://discord.com/privacy" target="_blank">
-            Política de Privacidad de Discord
-        </a>.
-    </p>
-
-    <h2>8. Conservación de datos</h2>
-
-    <p>
-        Conservamos la información únicamente durante el tiempo
-        necesario para proporcionar las funcionalidades de ScrimStats,
-        mantener estadísticas y resultados, cumplir obligaciones
-        técnicas o resolver problemas relacionados con el servicio.
-    </p>
-
-    <p>
-        Cuando determinada información deja de ser necesaria, puede
-        ser eliminada o dejar de conservarse.
+        ScrimStats no controla las políticas de privacidad de Discord ni
+        las prácticas de otros servicios utilizados por Discord.
     </p>
 
     <h2>9. Seguridad</h2>
 
     <p>
-        Adoptamos medidas razonables para proteger la información
-        procesada por ScrimStats frente a accesos no autorizados,
-        pérdida, alteración o divulgación indebida.
+        Se aplican medidas razonables para limitar el acceso a la información
+        procesada por el bot y utilizarla únicamente para las funciones
+        para las que fue diseñado.
     </p>
 
     <p>
-        Sin embargo, ningún sistema conectado a Internet puede
-        garantizar una seguridad absoluta.
+        Sin embargo, ningún sistema conectado a Internet puede garantizar
+        una seguridad absoluta.
     </p>
 
-    <h2>10. Privacidad de menores</h2>
+    <h2>10. Cambios en esta Política de Privacidad</h2>
 
     <p>
-        ScrimStats no está diseñado para recopilar deliberadamente
-        información personal de menores con fines distintos de los
-        necesarios para proporcionar las funciones del bot.
-    </p>
-
-    <h2>11. Solicitudes relacionadas con los datos</h2>
-
-    <p>
-        Si tienes preguntas sobre la información procesada por
-        ScrimStats o deseas realizar una solicitud relacionada con tus
-        datos, puedes ponerte en contacto con nosotros utilizando la
-        información de contacto indicada al final de esta política.
-    </p>
-
-    <h2>12. Cambios a esta Política de Privacidad</h2>
-
-    <p>
-        Podemos actualizar esta Política de Privacidad cuando sea
-        necesario para reflejar cambios en ScrimStats, sus
-        funcionalidades o los requisitos legales aplicables.
+        Esta Política de Privacidad puede actualizarse cuando se introduzcan
+        nuevas funciones, cambios técnicos o modificaciones en la forma en
+        que ScrimStats procesa información.
     </p>
 
     <p>
-        Cuando realicemos cambios importantes, actualizaremos la fecha
-        indicada al comienzo de esta política.
+        Cuando se realicen cambios importantes, se actualizará la fecha de
+        "Última actualización" indicada al comienzo de esta página.
     </p>
 
-    <h2>13. Contacto</h2>
+    <h2>11. Contacto</h2>
 
     <p>
-        Si tienes preguntas, comentarios o solicitudes relacionadas con
-        esta Política de Privacidad, puedes contactar al responsable de
-        ScrimStats mediante:
+        Si tienes preguntas relacionadas con esta Política de Privacidad o
+        con el funcionamiento de ScrimStats, puedes contactar al administrador
+        o propietario de ScrimStats a través del servidor de Discord donde
+        se encuentre instalado el bot.
     </p>
 
+    <h2>12. Aceptación</h2>
+
     <p>
-        <strong>Discord:</strong> ScrimStats Bot<br>
-        <strong>Correo electrónico:</strong> saulcuenta09@gmail.com
+        Al utilizar ScrimStats Bot, reconoces que has tenido la oportunidad
+        de consultar esta Política de Privacidad y comprender cómo el bot
+        procesa la información necesaria para proporcionar sus funciones.
     </p>
 
     <footer>
